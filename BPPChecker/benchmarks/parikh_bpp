@@ -25,5 +25,5 @@ s56 -> s52
 s52 -> s61, m6_21out
 
 
-query
-m6_21in - m6_21out < 0
+formula
+EF(m6_21in - m6_21out < 0)

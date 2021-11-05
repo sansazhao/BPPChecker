@@ -12,5 +12,5 @@ s65 -> s131
 s131 -> s19, m0_68out
 s106 -> s160
 
-query
-m0_68in - m0_68out >= 2
+formula
+EF(m0_68in - m0_68out >= 2)

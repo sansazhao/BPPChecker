@@ -18,7 +18,6 @@ You need to install the lark library if it is not installed in your environment:
 % pip install lark
 ```
 
-If the paper is accepted, we can package and distribute BPPChecker as a python library.
 
 
 ### ACS2BPP

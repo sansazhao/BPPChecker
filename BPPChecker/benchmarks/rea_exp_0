@@ -5,5 +5,5 @@ rules
 S -> X
 X -> X, Y
 
-query
-X == 2
+formula
+EF(X == 2)
