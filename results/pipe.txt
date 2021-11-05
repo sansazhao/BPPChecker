@@ -1,0 +1,245 @@
+
+Returned unsat core:
+[s105_ge0,
+ s38_ge0,
+ s67_ge0,
+ s1_ge0,
+ ReaInit_ge0,
+ m0_68out_ge0,
+ s105_flow,
+ s38_flow,
+ m0_68in_flow,
+ s67_flow,
+ s1_flow,
+ ReaInit_flow,
+ query]
+
+Assertions:
+[Implies(s19_ge0, x_s19 >= 0),
+ Implies(s105_ge0, x_s105 >= 0),
+ Implies(s38_ge0, x_s38 >= 0),
+ Implies(m0_68in_ge0, x_m0_68in >= 0),
+ Implies(s67_ge0, x_s67 >= 0),
+ Implies(s1_ge0, x_s1 >= 0),
+ Implies(ReaInit_ge0, x_ReaInit >= 0),
+ Implies(s65_ge0, x_s65 >= 0),
+ Implies(s131_ge0, x_s131 >= 0),
+ Implies(s160_ge0, x_s160 >= 0),
+ Implies(m0_68out_ge0, x_m0_68out >= 0),
+ Implies(s106_ge0, x_s106 >= 0),
+ Implies(y0_ge0, y0 >= 0),
+ Implies(y1_ge0, y1 >= 0),
+ Implies(y2_ge0, y2 >= 0),
+ Implies(y3_ge0, y3 >= 0),
+ Implies(y4_ge0, y4 >= 0),
+ Implies(y5_ge0, y5 >= 0),
+ Implies(y6_ge0, y6 >= 0),
+ Implies(y7_ge0, y7 >= 0),
+ Implies(y8_ge0, y8 >= 0),
+ Implies(y9_ge0, y9 >= 0),
+ Implies(s19_flow,
+         x_s19 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         1*y8 +
+         0*y9),
+ Implies(s105_flow,
+         x_s105 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         1*y3 +
+         -1*y4 +
+         -1*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9),
+ Implies(s38_flow,
+         x_s38 ==
+         0 +
+         0*y0 +
+         1*y1 +
+         0*y2 +
+         -1*y3 +
+         1*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9),
+ Implies(m0_68in_flow,
+         x_m0_68in ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         1*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9),
+ Implies(s67_flow,
+         x_s67 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         1*y2 +
+         0*y3 +
+         0*y4 +
+         1*y5 +
+         -1*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9),
+ Implies(s1_flow,
+         x_s1 ==
+         0 +
+         1*y0 +
+         -1*y1 +
+         -1*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9),
+ Implies(ReaInit_flow,
+         x_ReaInit ==
+         1 +
+         -1*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9),
+ Implies(s65_flow,
+         x_s65 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         1*y6 +
+         -1*y7 +
+         0*y8 +
+         0*y9),
+ Implies(s131_flow,
+         x_s131 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         1*y7 +
+         -1*y8 +
+         0*y9),
+ Implies(s160_flow,
+         x_s160 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         1*y9),
+ Implies(m0_68out_flow,
+         x_m0_68out ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         1*y8 +
+         0*y9),
+ Implies(s106_flow,
+         x_s106 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         1*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         -1*y9),
+ Implies(s19_z_gt0, Or(x_s19 == 0, z_s19 > 0)),
+ Implies(s105_z_gt0, Or(x_s105 == 0, z_s105 > 0)),
+ Implies(s38_z_gt0, Or(x_s38 == 0, z_s38 > 0)),
+ Implies(m0_68in_z_gt0, Or(x_m0_68in == 0, z_m0_68in > 0)),
+ Implies(s67_z_gt0, Or(x_s67 == 0, z_s67 > 0)),
+ Implies(s1_z_gt0, Or(x_s1 == 0, z_s1 > 0)),
+ Implies(s65_z_gt0, Or(x_s65 == 0, z_s65 > 0)),
+ Implies(s131_z_gt0, Or(x_s131 == 0, z_s131 > 0)),
+ Implies(s160_z_gt0, Or(x_s160 == 0, z_s160 > 0)),
+ Implies(m0_68out_z_gt0,
+         Or(x_m0_68out == 0, z_m0_68out > 0)),
+ Implies(s106_z_gt0, Or(x_s106 == 0, z_s106 > 0)),
+ Implies(s19_span,
+         Or(And(z_s19 == 0, y8 == 0),
+            And(z_s19 == z_s131 + 1, y8 > 0, z_s131 > 0))),
+ Implies(s105_span,
+         Or(And(z_s105 == 0, y3 == 0),
+            And(z_s105 == z_s38 + 1, y3 > 0, z_s38 > 0))),
+ Implies(s38_span,
+         Or(And(z_s38 == 0, y1 == 0, y4 == 0),
+            And(z_s38 == z_s1 + 1, y1 > 0, z_s1 > 0),
+            And(z_s38 == z_s105 + 1, y4 > 0, z_s105 > 0))),
+ Implies(m0_68in_span,
+         Or(And(z_m0_68in == 0, y6 == 0),
+            And(z_m0_68in == z_s67 + 1, y6 > 0, z_s67 > 0))),
+ Implies(s67_span,
+         Or(And(z_s67 == 0, y2 == 0, y5 == 0),
+            And(z_s67 == z_s1 + 1, y2 > 0, z_s1 > 0),
+            And(z_s67 == z_s105 + 1, y5 > 0, z_s105 > 0))),
+ Implies(s1_span,
+         Or(And(z_s1 == 0, y0 == 0), And(z_s1 == 1, y0 > 0))),
+ Implies(ReaInit_span, Or(And(z_ReaInit == 0))),
+ Implies(s65_span,
+         Or(And(z_s65 == 0, y6 == 0),
+            And(z_s65 == z_s67 + 1, y6 > 0, z_s67 > 0))),
+ Implies(s131_span,
+         Or(And(z_s131 == 0, y7 == 0),
+            And(z_s131 == z_s65 + 1, y7 > 0, z_s65 > 0))),
+ Implies(s160_span,
+         Or(And(z_s160 == 0, y9 == 0),
+            And(z_s160 == z_s106 + 1, y9 > 0, z_s106 > 0))),
+ Implies(m0_68out_span,
+         Or(And(z_m0_68out == 0, y8 == 0),
+            And(z_m0_68out == z_s131 + 1,
+                y8 > 0,
+                z_s131 > 0))),
+ Implies(s106_span,
+         Or(And(z_s106 == 0, y3 == 0),
+            And(z_s106 == z_s38 + 1, y3 > 0, z_s38 > 0))),
+ Implies(query, 1*x_m0_68in + -1*x_m0_68out >= 2)]

@@ -1,0 +1,30 @@
+----------------
+10 EG(EX(a, Y + Z >= 2))
+unsat
+time used: 0.33044s
+10 EG(Imp(X + Y >= 2, EX(a, Conj(X >= 2, Z >= 1))))
+unsat
+time used: 0.34763s
+10 EG(AF(X + Y >= 2))
+unsat
+time used: 1.29338s
+----------------
+20 EG(EX(a, Y + Z >= 2))
+unsat
+time used: 1.15312s
+20 EG(Imp(X + Y >= 2, EX(a, Conj(X >= 2, Z >= 1))))
+unsat
+time used: 1.33569s
+20 EG(AF(X + Y >= 2))
+unsat
+time used: 3.69335s
+----------------
+30 EG(EX(a, Y + Z >= 2))
+unsat
+time used: 2.09707s
+30 EG(Imp(X + Y >= 2, EX(a, Conj(X >= 2, Z >= 1))))
+unsat
+time used: 2.37648s
+30 EG(AF(X + Y >= 2))
+unsat
+time used: 7.91988s

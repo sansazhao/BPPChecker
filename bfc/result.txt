@@ -1,0 +1,16 @@
+Result: 
+VERIFICATION SUCCESSFUL
+Additional info:
+Ressources: 
+parse time: 0.00
+reduce time: 0.03
+total time (conc): 0.00
+max. virt. memory usage (mb): 0
+Result: 
+ERROR
+Additional info:
+Ressources: 
+parse time: 0.00
+reduce time: 0.03
+total time (conc): 18.29
+max. virt. memory usage (mb): 0

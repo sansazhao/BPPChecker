@@ -1,0 +1,10 @@
+initial
+X
+
+rules
+X -> a -> Y, Z
+Y -> a -> X, Y
+Z -> b -> X
+
+formula
+EG(AF(X + Y >= 2))

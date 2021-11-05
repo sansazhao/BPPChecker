@@ -1,0 +1,9 @@
+initial
+S
+
+rules
+S -> X
+X -> X, Y
+
+query
+X == 2

@@ -1,0 +1,34 @@
+python3 run.py ./benchmarks/pipe_bpp 
+unsat
+time used: 0.02500s
+
+time sh test_pipe.sh
+real	0m0.106s
+user	0m0.094s
+sys	0m0.018s
+
+9 vs 14
+
+-------------------
+python3 run.py ./benchmarks/ring_bpp 
+unsat
+time used: 0.10600s
+
+time sh test_ring.sh
+real	0m0.268s
+user	0m0.248s
+sys	0m0.033s
+
+28 vs 40
+
+------------------------
+python3 run.py ./benchmarks/sta_fac_bpp 
+unsat
+time used: 0.07402s
+
+time sh test_sta_fac.sh
+real	0m0.736s
+user	0m0.701s
+sys	0m0.041s
+
+22 vs 34

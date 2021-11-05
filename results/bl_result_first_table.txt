@@ -1,0 +1,27 @@
+-----result of bl_0-----
+sat
+time used: 0.02426s
+sat
+time used: 0.04219s
+sat
+time used: 0.07837s
+sat
+time used: 0.26985s
+-----result of bl_1-----
+sat
+time used: 0.03375s
+sat
+time used: 0.05631s
+sat
+time used: 0.10594s
+sat
+time used: 0.26731s
+-----result of bl_2-----
+sat
+time used: 0.08408s
+sat
+time used: 0.27668s
+sat
+time used: 0.99562s
+sat
+time used: 9.36515s

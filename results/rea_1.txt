@@ -1,0 +1,29 @@
+Returned model:
+[(ReaInit_flow, True), (ReaInit_ge0, True), (ReaInit_span, True), (S_flow, True), (S_ge0, True), (S_span, True), (S_z_gt0, True), (X_flow, True), (X_ge0, True), (X_span, True), (X_z_gt0, True), (Y_flow, True), (Y_ge0, True), (Y_span, True), (Y_z_gt0, True), (query, True), (x_ReaInit, 0), (x_S, 0), (x_X, 1), (x_Y, 1), (y0, 1), (y0_ge0, True), (y1, 1), (y1_ge0, True), (y2, 1), (y2_ge0, True), (z_ReaInit, 0), (z_S, 1), (z_X, 2), (z_Y, 3)]
+
+Assertions:
+[Implies(X_ge0, x_X >= 0),
+ Implies(ReaInit_ge0, x_ReaInit >= 0),
+ Implies(S_ge0, x_S >= 0),
+ Implies(Y_ge0, x_Y >= 0),
+ Implies(y0_ge0, y0 >= 0),
+ Implies(y1_ge0, y1 >= 0),
+ Implies(y2_ge0, y2 >= 0),
+ Implies(X_flow, x_X == 0 + 0*y0 + 1*y1 + 0*y2),
+ Implies(ReaInit_flow, x_ReaInit == 1 + -1*y0 + 0*y1 + 0*y2),
+ Implies(S_flow, x_S == 0 + 1*y0 + -1*y1 + 0*y2),
+ Implies(Y_flow, x_Y == 0 + 0*y0 + 0*y1 + 1*y2),
+ Implies(X_z_gt0, Or(x_X == 0, z_X > 0)),
+ Implies(S_z_gt0, Or(x_S == 0, z_S > 0)),
+ Implies(Y_z_gt0, Or(x_Y == 0, z_Y > 0)),
+ Implies(X_span,
+         Or(And(z_X == 0, y1 == 0, y2 == 0),
+            And(z_X == z_S + 1, y1 > 0, z_S > 0),
+            And(z_X == z_X + 1, y2 > 0, z_X > 0))),
+ Implies(ReaInit_span, Or(And(z_ReaInit == 0))),
+ Implies(S_span,
+         Or(And(z_S == 0, y0 == 0), And(z_S == 1, y0 > 0))),
+ Implies(Y_span,
+         Or(And(z_Y == 0, y2 == 0),
+            And(z_Y == z_X + 1, y2 > 0, z_X > 0))),
+ Implies(query, 1*x_Y == 1)]

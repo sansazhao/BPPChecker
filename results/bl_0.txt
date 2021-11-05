@@ -1,0 +1,115 @@
+Returned model:
+[(connect1, True), (connect2, True), (equal, True), (prop0, True), (prop1, True), (prop2, True), (u0_0, 0), (u0_1, 0), (u0_2, 1), (u1_0, 1), (u1_1, 1), (u1_2, 0), (u2_0, 1), (u2_1, 1), (u2_2, 1)]
+
+Stats of constraints:
+Counter({'action': 9, 'enable': 9, 'big_t_minus': 9, 'psb_trans': 9, 'state': 6, 'big_t': 3, 'Atom': 3, 'exist': 3, 'EX': 3})
+
+Stats from z3:
+(:added-eqs           70
+ :arith-add-rows      26
+ :arith-assert-diseq  25
+ :arith-assert-lower  46
+ :arith-assert-upper  40
+ :arith-bound-prop    6
+ :arith-eq-adapter    35
+ :arith-fixed-eqs     13
+ :arith-offset-eqs    11
+ :arith-pivots        18
+ :binary-propagations 131
+ :conflicts           1
+ :decisions           4
+ :final-checks        1
+ :max-memory          3.07
+ :memory              3.07
+ :mk-bool-var         151
+ :mk-clause           69
+ :num-allocs          282936
+ :num-checks          1
+ :propagations        138
+ :rlimit-count        4080)
+
+Assertions:
+[Implies(equal, And(u0_0 == 0, u0_1 == 0, u0_2 == 1)),
+ Implies(connect1,
+         Or(And(u0_2 >= 1,
+                And(u1_0 == u0_0 + 1,
+                    u1_1 == u0_1 + 1,
+                    u1_2 == u0_2 - 1 + 0)),
+            And(u0_0 >= 1,
+                And(u1_0 == u0_0 - 1 + 1,
+                    u1_1 == u0_1 + 0,
+                    u1_2 == u0_2 + 1)),
+            And(u0_1 >= 1,
+                And(u1_0 == u0_0 + 0,
+                    u1_1 == u0_1 - 1 + 0,
+                    u1_2 == u0_2 + 1)))),
+ Implies(connect2,
+         Or(And(u1_2 >= 1,
+                And(u2_0 == u1_0 + 1,
+                    u2_1 == u1_1 + 1,
+                    u2_2 == u1_2 - 1 + 0)),
+            And(u1_0 >= 1,
+                And(u2_0 == u1_0 - 1 + 1,
+                    u2_1 == u1_1 + 0,
+                    u2_2 == u1_2 + 1)),
+            And(u1_1 >= 1,
+                And(u2_0 == u1_0 + 0,
+                    u2_1 == u1_1 - 1 + 0,
+                    u2_2 == u1_2 + 1)))),
+ Implies(prop0,
+         And(True,
+             Exists([u3_0, u3_1, u3_2],
+                    And(Or(And(True,
+                               u0_2 >= 1,
+                               And(u3_0 == u0_0 + 1,
+                                   u3_1 == u0_1 + 1,
+                                   u3_2 == u0_2 - 1 + 0)),
+                           And(True,
+                               u0_0 >= 1,
+                               And(u3_0 == u0_0 - 1 + 1,
+                                   u3_1 == u0_1 + 0,
+                                   u3_2 == u0_2 + 1)),
+                           And(False,
+                               u0_1 >= 1,
+                               And(u3_0 == u0_0 + 0,
+                                   u3_1 == u0_1 - 1 + 0,
+                                   u3_2 == u0_2 + 1))),
+                        0 + u3_0*1 + u3_1*1 + u3_2*0 >= 2)))),
+ Implies(prop1,
+         And(True,
+             Exists([u4_0, u4_1, u4_2],
+                    And(Or(And(True,
+                               u1_2 >= 1,
+                               And(u4_0 == u1_0 + 1,
+                                   u4_1 == u1_1 + 1,
+                                   u4_2 == u1_2 - 1 + 0)),
+                           And(True,
+                               u1_0 >= 1,
+                               And(u4_0 == u1_0 - 1 + 1,
+                                   u4_1 == u1_1 + 0,
+                                   u4_2 == u1_2 + 1)),
+                           And(False,
+                               u1_1 >= 1,
+                               And(u4_0 == u1_0 + 0,
+                                   u4_1 == u1_1 - 1 + 0,
+                                   u4_2 == u1_2 + 1))),
+                        0 + u4_0*1 + u4_1*1 + u4_2*0 >= 2)))),
+ Implies(prop2,
+         And(True,
+             Exists([u5_0, u5_1, u5_2],
+                    And(Or(And(True,
+                               u2_2 >= 1,
+                               And(u5_0 == u2_0 + 1,
+                                   u5_1 == u2_1 + 1,
+                                   u5_2 == u2_2 - 1 + 0)),
+                           And(True,
+                               u2_0 >= 1,
+                               And(u5_0 == u2_0 - 1 + 1,
+                                   u5_1 == u2_1 + 0,
+                                   u5_2 == u2_2 + 1)),
+                           And(False,
+                               u2_1 >= 1,
+                               And(u5_0 == u2_0 + 0,
+                                   u5_1 == u2_1 - 1 + 0,
+                                   u5_2 == u2_2 + 1))),
+                        0 + u5_0*1 + u5_1*1 + u5_2*0 >= 2))))]

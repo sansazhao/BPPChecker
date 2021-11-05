@@ -1,0 +1,6 @@
+
+unsat core of rea_exp_0:
+S_ge0, x_S >= 0
+S_flow, x_S == 0 + 1*y0 + -1*y1 + 0*y2
+X_flow, x_X == 0 + 0*y0 + 1*y1 + 0*y2
+query, 1*x_X == 2

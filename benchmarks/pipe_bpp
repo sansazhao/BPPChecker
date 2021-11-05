@@ -1,0 +1,16 @@
+initial
+s1
+
+rules
+s1 -> s38
+s1 -> s67
+s38 -> s106, s105
+s105 -> s38
+s105 -> s67
+s67 -> s65, m0_68in
+s65 -> s131
+s131 -> s19, m0_68out
+s106 -> s160
+
+query
+m0_68in - m0_68out >= 2

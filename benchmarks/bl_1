@@ -1,0 +1,10 @@
+initial
+X
+
+rules
+X -> a -> Y, Z
+Y -> a -> X, Y
+Z -> b -> X
+
+formula
+EG(Imp(X + Y >= 2, EX(a, Conj(X >= 2, Z >= 1))))

@@ -1,0 +1,358 @@
+Returned model:
+[(ReaInit_flow, True), (ReaInit_ge0, True), (ReaInit_span, True), (m27_200out_flow, True), (m27_200out_ge0, True), (m27_200out_span, True), (m27_200out_z_gt0, True), (m31_231in_flow, True), (m31_231in_ge0, True), (m31_231in_span, True), (m31_231in_z_gt0, True), (query, True), (s16_flow, True), (s16_ge0, True), (s16_span, True), (s16_z_gt0, True), (s1_flow, True), (s1_ge0, True), (s1_span, True), (s1_z_gt0, True), (s23_flow, True), (s23_ge0, True), (s23_span, True), (s23_z_gt0, True), (s282_flow, True), (s282_ge0, True), (s282_span, True), (s282_z_gt0, True), (s296_flow, True), (s296_ge0, True), (s296_span, True), (s296_z_gt0, True), (s297_flow, True), (s297_ge0, True), (s297_span, True), (s297_z_gt0, True), (s298_flow, True), (s298_ge0, True), (s298_span, True), (s298_z_gt0, True), (s327_flow, True), (s327_ge0, True), (s327_span, True), (s327_z_gt0, True), (s77_flow, True), (s77_ge0, True), (s77_span, True), (s77_z_gt0, True), (s83_flow, True), (s83_ge0, True), (s83_span, True), (s83_z_gt0, True), (s84_flow, True), (s84_ge0, True), (s84_span, True), (s84_z_gt0, True), (s87_flow, True), (s87_ge0, True), (s87_span, True), (s87_z_gt0, True), (s88_flow, True), (s88_ge0, True), (s88_span, True), (s88_z_gt0, True), (x_ReaInit, 0), (x_m27_200out, 3), (x_m31_231in, 5), (x_s1, 0), (x_s16, 0), (x_s23, 0), (x_s282, 1), (x_s296, 1), (x_s297, 1), (x_s298, 1), (x_s327, 2), (x_s77, 1), (x_s83, 0), (x_s84, 1), (x_s87, 0), (x_s88, 1), (y0, 1), (y0_ge0, True), (y1, 1), (y10, 4), (y10_ge0, True), (y11, 3), (y11_ge0, True), (y12, 2), (y12_ge0, True), (y1_ge0, True), (y2, 1), (y2_ge0, True), (y3, 1), (y3_ge0, True), (y4, 0), (y4_ge0, True), (y5, 7), (y5_ge0, True), (y6, 6), (y6_ge0, True), (y7, 1), (y7_ge0, True), (y8, 6), (y8_ge0, True), (y9, 5), (y9_ge0, True), (z_ReaInit, 0), (z_m27_200out, 9), (z_m31_231in, 7), (z_s1, 1), (z_s16, 2), (z_s23, 4), (z_s282, 9), (z_s296, 7), (z_s297, 8), (z_s298, 6), (z_s327, 10), (z_s77, 6), (z_s83, 5), (z_s84, 5), (z_s87, 3), (z_s88, 3)]
+
+Assertions:
+[Implies(s87_ge0, x_s87 >= 0),
+ Implies(s282_ge0, x_s282 >= 0),
+ Implies(s83_ge0, x_s83 >= 0),
+ Implies(m31_231in_ge0, x_m31_231in >= 0),
+ Implies(s23_ge0, x_s23 >= 0),
+ Implies(s16_ge0, x_s16 >= 0),
+ Implies(s298_ge0, x_s298 >= 0),
+ Implies(s296_ge0, x_s296 >= 0),
+ Implies(s297_ge0, x_s297 >= 0),
+ Implies(s88_ge0, x_s88 >= 0),
+ Implies(s77_ge0, x_s77 >= 0),
+ Implies(s1_ge0, x_s1 >= 0),
+ Implies(s84_ge0, x_s84 >= 0),
+ Implies(s327_ge0, x_s327 >= 0),
+ Implies(m27_200out_ge0, x_m27_200out >= 0),
+ Implies(ReaInit_ge0, x_ReaInit >= 0),
+ Implies(y0_ge0, y0 >= 0),
+ Implies(y1_ge0, y1 >= 0),
+ Implies(y2_ge0, y2 >= 0),
+ Implies(y3_ge0, y3 >= 0),
+ Implies(y4_ge0, y4 >= 0),
+ Implies(y5_ge0, y5 >= 0),
+ Implies(y6_ge0, y6 >= 0),
+ Implies(y7_ge0, y7 >= 0),
+ Implies(y8_ge0, y8 >= 0),
+ Implies(y9_ge0, y9 >= 0),
+ Implies(y10_ge0, y10 >= 0),
+ Implies(y11_ge0, y11 >= 0),
+ Implies(y12_ge0, y12 >= 0),
+ Implies(s87_flow,
+         x_s87 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         1*y2 +
+         -1*y3 +
+         -1*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s282_flow,
+         x_s282 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         1*y11 +
+         -1*y12),
+ Implies(s83_flow,
+         x_s83 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         1*y5 +
+         -1*y6 +
+         -1*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(m31_231in_flow,
+         x_m31_231in ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         1*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s23_flow,
+         x_s23 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         1*y3 +
+         0*y4 +
+         -1*y5 +
+         1*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s16_flow,
+         x_s16 ==
+         0 +
+         0*y0 +
+         1*y1 +
+         -1*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s298_flow,
+         x_s298 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         1*y8 +
+         -1*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s296_flow,
+         x_s296 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         1*y9 +
+         -1*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s297_flow,
+         x_s297 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         1*y10 +
+         -1*y11 +
+         0*y12),
+ Implies(s88_flow,
+         x_s88 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         1*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s77_flow,
+         x_s77 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         1*y4 +
+         0*y5 +
+         0*y6 +
+         1*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s1_flow,
+         x_s1 ==
+         0 +
+         1*y0 +
+         -1*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s84_flow,
+         x_s84 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         1*y5 +
+         0*y6 +
+         0*y7 +
+         -1*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s327_flow,
+         x_s327 ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         1*y12),
+ Implies(m27_200out_flow,
+         x_m27_200out ==
+         0 +
+         0*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         1*y11 +
+         0*y12),
+ Implies(ReaInit_flow,
+         x_ReaInit ==
+         1 +
+         -1*y0 +
+         0*y1 +
+         0*y2 +
+         0*y3 +
+         0*y4 +
+         0*y5 +
+         0*y6 +
+         0*y7 +
+         0*y8 +
+         0*y9 +
+         0*y10 +
+         0*y11 +
+         0*y12),
+ Implies(s87_z_gt0, Or(x_s87 == 0, z_s87 > 0)),
+ Implies(s282_z_gt0, Or(x_s282 == 0, z_s282 > 0)),
+ Implies(s83_z_gt0, Or(x_s83 == 0, z_s83 > 0)),
+ Implies(m31_231in_z_gt0,
+         Or(x_m31_231in == 0, z_m31_231in > 0)),
+ Implies(s23_z_gt0, Or(x_s23 == 0, z_s23 > 0)),
+ Implies(s16_z_gt0, Or(x_s16 == 0, z_s16 > 0)),
+ Implies(s298_z_gt0, Or(x_s298 == 0, z_s298 > 0)),
+ Implies(s296_z_gt0, Or(x_s296 == 0, z_s296 > 0)),
+ Implies(s297_z_gt0, Or(x_s297 == 0, z_s297 > 0)),
+ Implies(s88_z_gt0, Or(x_s88 == 0, z_s88 > 0)),
+ Implies(s77_z_gt0, Or(x_s77 == 0, z_s77 > 0)),
+ Implies(s1_z_gt0, Or(x_s1 == 0, z_s1 > 0)),
+ Implies(s84_z_gt0, Or(x_s84 == 0, z_s84 > 0)),
+ Implies(s327_z_gt0, Or(x_s327 == 0, z_s327 > 0)),
+ Implies(m27_200out_z_gt0,
+         Or(x_m27_200out == 0, z_m27_200out > 0)),
+ Implies(s87_span,
+         Or(And(z_s87 == 0, y2 == 0),
+            And(z_s87 == z_s16 + 1, y2 > 0, z_s16 > 0))),
+ Implies(s282_span,
+         Or(And(z_s282 == 0, y11 == 0),
+            And(z_s282 == z_s297 + 1, y11 > 0, z_s297 > 0))),
+ Implies(s83_span,
+         Or(And(z_s83 == 0, y5 == 0),
+            And(z_s83 == z_s23 + 1, y5 > 0, z_s23 > 0))),
+ Implies(m31_231in_span,
+         Or(And(z_m31_231in == 0, y9 == 0),
+            And(z_m31_231in == z_s298 + 1,
+                y9 > 0,
+                z_s298 > 0))),
+ Implies(s23_span,
+         Or(And(z_s23 == 0, y3 == 0, y6 == 0),
+            And(z_s23 == z_s87 + 1, y3 > 0, z_s87 > 0),
+            And(z_s23 == z_s83 + 1, y6 > 0, z_s83 > 0))),
+ Implies(s16_span,
+         Or(And(z_s16 == 0, y1 == 0),
+            And(z_s16 == z_s1 + 1, y1 > 0, z_s1 > 0))),
+ Implies(s298_span,
+         Or(And(z_s298 == 0, y8 == 0),
+            And(z_s298 == z_s84 + 1, y8 > 0, z_s84 > 0))),
+ Implies(s296_span,
+         Or(And(z_s296 == 0, y9 == 0),
+            And(z_s296 == z_s298 + 1, y9 > 0, z_s298 > 0))),
+ Implies(s297_span,
+         Or(And(z_s297 == 0, y10 == 0),
+            And(z_s297 == z_s296 + 1, y10 > 0, z_s296 > 0))),
+ Implies(s88_span,
+         Or(And(z_s88 == 0, y2 == 0),
+            And(z_s88 == z_s16 + 1, y2 > 0, z_s16 > 0))),
+ Implies(s77_span,
+         Or(And(z_s77 == 0, y4 == 0, y7 == 0),
+            And(z_s77 == z_s87 + 1, y4 > 0, z_s87 > 0),
+            And(z_s77 == z_s83 + 1, y7 > 0, z_s83 > 0))),
+ Implies(s1_span,
+         Or(And(z_s1 == 0, y0 == 0), And(z_s1 == 1, y0 > 0))),
+ Implies(s84_span,
+         Or(And(z_s84 == 0, y5 == 0),
+            And(z_s84 == z_s23 + 1, y5 > 0, z_s23 > 0))),
+ Implies(s327_span,
+         Or(And(z_s327 == 0, y12 == 0),
+            And(z_s327 == z_s282 + 1, y12 > 0, z_s282 > 0))),
+ Implies(m27_200out_span,
+         Or(And(z_m27_200out == 0, y11 == 0),
+            And(z_m27_200out == z_s297 + 1,
+                y11 > 0,
+                z_s297 > 0))),
+ Implies(ReaInit_span, Or(And(z_ReaInit == 0))),
+ Implies(query, 1*x_s327 >= 2)]

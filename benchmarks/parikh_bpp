@@ -1,0 +1,29 @@
+initial
+s1
+
+rules
+s1 -> s9
+s9 -> s31
+s9 -> s32
+s31 -> s20
+s20 ->  s18, m6_21in
+s18 -> s37
+s37 ->  s15, m0_39out
+s15 -> s24
+s24 -> s22, m6_25in
+s22 -> s12
+s12 -> s13, m6_14in
+
+s32 -> s58
+s58 -> s59, m6_21out
+s59 -> s55
+s55 -> s53, m0_39in
+s53 -> s52
+s52 -> s60, m6_14out
+s52 -> s56, m6_25out
+s56 -> s52
+s52 -> s61, m6_21out
+
+
+query
+m6_21in - m6_21out < 0

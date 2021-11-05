@@ -1,0 +1,38 @@
+start: problem
+
+problem: ccfg "\n" "query" "\n" query     -> rea
+       | ccfg "\n" "formula" "\n" formula -> bl 
+
+ccfg: "initial\n" symbols "rules\n" rules
+symbols: VAR                 -> single
+       | symbols "," symbols -> multiple
+rules: rule             -> single
+     | rules "\n" rules -> multiple
+rule: VAR "->" symbols            -> u_rule
+    | VAR "->" LABEL "->" symbols -> l_rule
+
+query: acc COMPARE NUMBER
+mult: VAR            -> one
+    | VAR "*" NUMBER -> coef
+acc: mult            -> single 
+   | acc CONNECT acc -> multiple 
+
+formula: query                              -> atom
+       | UNIRY "(" formula ")"              -> unary
+       | BINARY "(" formula "," formula ")" -> binary
+       | NEXT "(" LABEL "," formula ")"     -> next
+
+CONNECT: "+"|"-"
+COMPARE: "=="|"!="|">="|"<="|">"|"<"
+UNIRY: "Neg"|"EG"|"AF"|"EF"
+BINARY: "Conj"|"Disj"|"Imp"
+NEXT: "EX"|"AX"
+
+VAR: CNAME
+LABEL: CNAME
+COMMENT: "#" /[^\n]*/ "\n"
+
+%import common.WS
+%import common.CNAME
+%import common.INT -> NUMBER
+%ignore WS | COMMENT
